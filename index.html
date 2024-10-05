@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+  .container {
+    margin-top: 50px;
+    border: 10px solid #d1d1c5;
+    margin-left: 660px;
+  height: 567px;
+  width: 545px; 
+  display: grid;
+  background-color: #e6e5f3;
+  grid-template-columns: 13px 12px 11px 11px 8px 11px 105px 11px 38px 13px 113px 13px 29px 12px 36px 11px 17px 10px 26px 13px 8px 12px 12px ; /* Each column width rounded 23*/
+  grid-template-rows: 10px 12px 12px 11px 8px 13px 64px 11px 91px 10px 6px 10px 91px 13px 10px 14px 60px 13px 22px 12px 29px 12px 8px 10px 15px; /*25 Each row height rounded */
+}
+/*23 columns and 25 rows*/
+
+
+
+
+
+.item1{
+  grid-area: 2/1/2/24;
+ background-color: #e72813;
+}
+
+
+.item2{
+  grid-area: 4/1/4/24;
+ background-color: #e0b435;
+}
+.item3{
+  grid-area: 6/1/6/24;
+ background-color: #3366cc;
+}
+.item4{
+  grid-area: 8/1/8/24;
+ background-color: #e0b435;
+}
+.item5{
+  grid-area: 10/1/10/24;
+  background-color: #3366cc;
+}
+.item6{
+  grid-area: 12/1/12/24;
+ background-color: #e0b435;
+}
+.item7{
+  grid-area: 14/1/14/24;
+ background-color: #e0b435;
+}
+.item8{
+  grid-area: 16/1/16/24;
+ background-color: #e72813;
+}
+.item9{
+  grid-area: 18/1/18/24;
+ background-color: #e0b435;
+}
+.item10{
+  grid-area: 20/1/20/24;
+ background-color: #e0b435;
+}
+.item11{
+  grid-area: 22/1/22/24;
+ background-color: #3366cc;
+}
+
+.item12{
+  grid-area: 24/1/24/24;
+ background-color: #e0b435;
+}
+
+.item11c{
+  grid-area: 1/2/4/2;
+ background-color: #e0b435;
+}
+.item12c{
+  grid-area: 4/2/14/2;
+ background-color: #e0b435;
+}
+.item13c{
+  grid-area: 15/2/18/2;
+ background-color: #e0b435;
+}
+.item14c{
+  grid-area: 18/2/22/2;
+ background-color: #e0b435;
+}
+.item15c{
+  grid-area: 22/2/24/2;
+ background-color: #e0b435;
+}
+.item16c{
+  grid-area: 24/2/26/2;
+ background-color: #e0b435;
+}
+.item21c{
+  grid-area: 1/4/6/4;
+ background-color: #3366cc;
+}
+.item22c{
+  grid-area: 6/4/8/4;
+ background-color: #3366cc;
+}
+.item23c{
+  grid-area: 8/4/10/4;
+ background-color: #3366cc;
+}
+.item24c{
+  grid-area: 10/4/12/4;
+ background-color: #3366cc;
+}
+.item25c{
+  grid-area: 12/4/22/4;
+ background-color: #3366cc;
+}
+.item26c{
+  grid-area: 22/4/24/4;
+ background-color: #3366cc;
+}
+.item27c{
+  grid-area: 24/4/26/4;
+ background-color: #3366cc;
+}
+.item31c{
+  grid-area: 1/6/4/6;
+ background-color: #e0b435;
+}
+.item32c{
+  grid-area: 4/6/6/6;
+ background-color: #e0b435;
+}
+.item33c{
+  grid-area: 6/6/8/6;
+ background-color: #e0b435;
+}
+.item34c{
+  grid-area: 8/6/10/6;
+ background-color: #e0b435;
+}
+.item35c{
+  grid-area: 10/6/12/6;
+ background-color: #e0b435;
+}
+.item36c{
+  grid-area: 12/6/18/6;
+ background-color: #e0b435;
+}
+.item37c{
+  grid-area: 18/6/24/6;
+ background-color: #e0b435;
+}
+.item38c{
+  grid-area: 24/6/26/6;
+ background-color: #e0b435;
+}
+.item41c{
+  grid-area: 1/8/8/8;
+ background-color: #e72813;
+}
+.item42c{
+  grid-area: 8/8/10/8;
+ background-color: #e72813;
+}
+.item43c{
+  grid-area: 10/8/12/8;
+ background-color: #e72813;
+}
+.item44c{
+  grid-area: 12/8/14/8;
+ background-color: #e72813;
+}
+.item45c{
+  grid-area: 14/8/18/8;
+ background-color: #e72813;
+}
+.item46c{
+  grid-area: 18/8/22/8;
+ background-color: #e72813;
+}
+.item47c{
+  grid-area: 22/8/26/8;
+ background-color: #e72813;
+}
+.item51c{
+  grid-area: 1/10/12/10;
+ background-color: #e0b435;
+}
+.item52c{
+  grid-area: 12/10/14/10;
+ background-color: #e0b435;
+}
+.item53c{
+  grid-area: 14/10/18/10;
+ background-color: #e0b435;
+}
+.item54c{
+  grid-area: 18/10/22/10;
+ background-color: #e0b435;
+}
+.item55c{
+  grid-area: 22/10/24/10;
+  background-color: #e0b435;
+}
+.item56c{
+  grid-area: 24/10/26/10;
+  background-color: #e0b435;
+}
+.item61c{
+  grid-area: 1/12/4/12;
+  background-color: #e0b435;
+}
+.item62c{
+  grid-area: 4/12/6/12;
+  background-color: #e0b435;
+}
+.item63c{
+  grid-area: 6/12/8/12;
+  background-color: #e0b435;
+}
+.item64c{
+  grid-area: 8/12/10/12;
+  background-color: #e0b435;
+}
+.item65c{
+  grid-area: 10/12/12/12;
+  background-color: #e0b435;
+}
+.item66c{
+  grid-area: 12/12/16/12;
+  background-color: #e0b435;
+}
+.item67c{
+  grid-area: 16/12/18/12;
+  background-color: #e0b435;
+}
+.item68c{
+  grid-area: 18/12/22/12;
+  background-color: #e0b435;
+}
+.item69c{
+  grid-area: 22/12/24/12;
+  background-color: #e0b435;
+}
+.item691c{
+  grid-area: 24/12/26/12;
+  background-color: #e0b435;
+}
+.item71c{
+  grid-area: 1/14/4/14;
+  background-color: #e0b435;
+}
+.item72c{
+  grid-area: 4/14/6/14;
+  background-color: #e0b435;
+}
+.item73c{
+  grid-area: 6/14/8/14;
+  background-color: #e0b435;
+}
+.item74c{
+  grid-area: 8/14/10/14;
+  background-color: #e0b435;
+}
+.item75c{
+  grid-area: 10/14/12/14;
+  background-color: #e0b435;
+}
+.item76c{
+  grid-area: 12/14/16/14;
+  background-color: #e0b435;
+}
+.item77c{
+  grid-area: 16/14/18/14;
+  background-color: #e0b435;
+}
+.item78c{
+  grid-area: 18/14/22/14;
+  background-color: #e0b435;
+}
+.item79c{
+  grid-area: 22/14/24/14;
+  background-color: #e0b435;
+}
+.item791c{
+  grid-area: 24/14/26/14;
+  background-color: #e0b435;
+}
+.item81c{
+  grid-area: 1/16/4/16;
+  background-color: #e0b435;
+}
+.item82c{
+  grid-area: 4/16/6/16;
+  background-color: #e0b435;
+}
+.item83c{
+  grid-area: 6/16/8/16;
+  background-color: #e0b435;
+}
+.item84c{
+  grid-area: 8/16/10/16;
+  background-color: #e0b435;
+}
+.item85c{
+  grid-area: 10/16/12/16;
+  background-color: #e0b435;
+}
+.item86c{
+  grid-area: 12/16/16/16;
+  background-color: #e0b435;
+}
+.item87c{
+  grid-area: 16/16/18/16;
+  background-color: #e0b435;
+}
+.item88c{
+  grid-area: 18/16/22/16;
+  background-color: #e0b435;
+}
+.item89c{
+  grid-area: 22/16/24/16;
+  background-color: #e0b435;
+}
+.item891c{
+  grid-area: 24/16/26/16;
+  background-color: #e0b435;
+}
+.item91c{
+  grid-area: 1/18/4/18;
+  background-color: #e0b435;
+}
+.item92c{
+  grid-area: 4/18/6/18;
+  background-color: #e0b435;
+}
+.item93c{
+  grid-area: 6/18/8/18;
+  background-color: #e0b435;
+}
+.item94c{
+  grid-area: 8/18/10/18;
+  background-color: #e0b435;
+}
+.item95c{
+  grid-area: 10/18/12/18;
+  background-color: #e0b435;
+}
+.item96c{
+  grid-area: 12/18/16/18;
+  background-color: #e0b435;
+}
+.item97c{
+  grid-area: 16/18/18/18;
+  background-color: #e0b435;
+}
+.item98c{
+  grid-area: 18/18/22/18;
+  background-color: #e0b435;
+}
+.item99c{
+  grid-area: 22/18/24/18;
+  background-color: #e0b435;
+}
+.item991c{
+  grid-area: 24/18/26/18;
+  background-color: #e0b435;
+}
+.item111c{
+  grid-area: 1/22/4/22;
+  background-color: #e0b435;
+}
+.item112c{
+  grid-area: 4/22/6/22;
+  background-color: #e0b435;
+}
+.item113c{
+  grid-area: 6/22/8/22;
+  background-color: #e0b435;
+}
+.item114c{
+  grid-area: 8/22/10/22;
+  background-color: #e0b435;
+}
+.item115c{
+  grid-area: 10/22/12/22;
+  background-color: #e0b435;
+}
+.item116c{
+  grid-area: 12/22/16/22;
+  background-color: #e0b435;
+}
+.item117c{
+  grid-area: 16/22/18/22;
+  background-color: #e0b435;
+}
+.item118c{
+  grid-area: 18/22/22/22;
+  background-color: #e0b435;
+}
+.item119c{
+  grid-area: 22/22/24/22;
+  background-color: #e0b435;
+}
+.item1191c{
+  grid-area: 24/22/26/22;
+  background-color: #e0b435;
+}
+.item101c{
+  grid-area: 1/20/4/20;
+  background-color: #e72813;
+}
+.item102c{
+  grid-area: 4/20/6/20;
+  background-color: #e72813;
+}
+.item103c{
+  grid-area: 6/20/10/20;
+  background-color: #e72813;
+}
+.item105c{
+  grid-area: 10/20/12/20;
+  background-color: #e72813;
+}
+.item106c{
+  grid-area: 12/20/16/20;
+  background-color: #e72813;
+}
+.item107c{
+  grid-area: 16/20/18/20;
+  background-color: #e72813;
+}
+.item108c{
+  grid-area: 18/20/22/20;
+  background-color: #e72813;
+}
+.item109c{
+  grid-area: 22/20/24/20;
+  background-color: #e72813;
+}
+.item1091c{
+  grid-area: 24/20/26/20;
+  background-color: #e72813;
+}
+
+
+
+
+
+
+h1{
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  color:#e0b435 ;
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #e72813;
+}
+
+p{
+  text-align: justify;
+  font-size: 1.2rem;
+  width:70%;
+  margin-left: 15%;
+  color: #3366cc;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 2px;
+    height: 538.65px;
+    grid-template-columns: 
+      calc(13px * 0.815)  /* Each column width rounded 23*/
+      calc(12px * 0.815)
+      calc(11px * 0.815)
+      calc(11px * 0.815)
+      calc(8px * 0.815)
+      calc(11px * 0.815)
+      calc(105px * 0.815)
+      calc(11px * 0.815)
+      calc(38px * 0.815)
+      calc(13px * 0.815)
+      calc(113px * 0.815)
+      calc(13px * 0.815)
+      calc(29px * 0.815)
+      calc(12px * 0.815)
+      calc(36px * 0.815)
+      calc(11px * 0.815)
+      calc(17px * 0.815)
+      calc(10px * 0.815)
+      calc(26px * 0.815)
+      calc(13px * 0.815)
+      calc(8px * 0.815)
+      calc(12px * 0.815)
+      calc(12px * 0.815);
+
+    grid-template-rows:
+      calc(10px * 0.9494)
+      calc(12px * 0.9494)
+      calc(12px * 0.9494)
+      calc(11px * 0.9494)
+      calc(8px * 0.9494)
+      calc(13px * 0.9494)
+      calc(64px * 0.9494)
+      calc(11px * 0.9494)
+      calc(91px * 0.9494)
+      calc(10px * 0.9494)
+      calc(6px * 0.9494)
+      calc(10px * 0.9494)
+      calc(91px * 0.9494)
+      calc(13px * 0.9494)
+      calc(10px * 0.9494)
+      calc(14px * 0.9494)
+      calc(60px * 0.9494)
+      calc(13px * 0.9494)
+      calc(22px * 0.9494)
+      calc(12px * 0.9494)
+      calc(29px * 0.9494)
+      calc(12px * 0.9494)
+      calc(8px * 0.9494)
+      calc(10px * 0.9494)
+      calc(15px * 0.9494);
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .x{
+   max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <h1>New York City<h1>
+  <h2> Painting by Piet Mondrian</h2>
+  <p>For 75 years, a Piet Mondrian painting titled New York City I has been hanging upside down in museums, including in Düsseldorf since 1980. Recently discovered by art historian Susanne Meyer-Büser, the painting's thickening grid suggests it should be flipped to resemble a dark sky, contrary to its current depiction of a simplified skyline. Notably, the artwork lacks Mondrian's signature, possibly indicating its unfinished state.</p>
+  
+  <div class="container">
+    
+    <div class="item12c x"></div>
+    <div class="item14c x"></div>
+    <div class="item16c x"></div>
+    <div class="item21c x"></div>
+    <div class="item23c x"></div>
+    <div class="item25c x"></div>
+    <div class="item27c x"></div>
+    <div class="item1c x"></div>
+    <div class="item32c x"></div>
+    <div class="item34c x "></div>
+    <div class="item36c x"></div>
+    <div class="item38c x"></div>
+    <div class="item42c x"></div>
+    <div class="item44c x"></div>
+    <div class="item46c x"></div>
+    <div class="item52c x"></div>
+    <div class="item54c x"></div>
+    <div class="item56c x"></div>
+    <div class="item62c x"></div>
+    <div class="item64c x"></div>
+    <div class="item66c x"></div>
+    <div class="item68c x"></div>
+    <div class="item691c x"></div>
+    <div class="item72c x"></div>
+    <div class="item74c x"></div>
+    <div class="item76c x"></div>
+    <div class="item78c x"></div>
+    <div class="item791c x "></div>
+    <div class="item82c x"></div>
+    <div class="item84c x"></div>
+    <div class="item86c x"></div>
+    <div class="item88c x"></div>
+    <div class="item891c x"></div>
+    <div class="item92c x"></div>
+    <div class="item94c x"></div>
+    <div class="item96c x"></div>
+    <div class="item98c x"></div>
+    <div class="item991c x"></div>
+    <div class="item112c x"></div>
+    <div class="item114c x"></div>
+    <div class="item116c x"></div>
+    <div class="item118c x"></div>
+    <div class="item1191c x"></div>
+    <div class="item102c x"></div>
+    <div class="item106c x"></div>
+    <div class="item108c x"></div>
+    <div class="item1091c x"></div>
+
+
+    <div class="item1 x"></div>
+    <div class="item2 x"></div>
+    <div class="item3 x"></div>
+    <div class="item4 x"></div>
+    <div class="item5 x"></div>
+    <div class="item6 x"></div>
+    <div class="item7 x"></div>
+    <div class="item8 x"></div>
+    <div class="item9 x"></div>
+    <div class="item10 x"></div>
+    <div class="item11 x"></div>
+    <div class="item12 x"></div>
+
+    <div class="item11c x"></div>
+    <div class="item13c x"></div>
+    <div class="item15c x"></div>
+
+    
+    
+    <div class="item22c x"></div>
+    <div class="item24c x"></div>
+    <div class="item26c x"></div>
+    <div class="item31c x"></div>
+    <div class="item33c x"></div>
+    <div class="item35c x"></div>
+    <div class="item37c x"></div>
+    <div class="item41c x"></div>
+    <div class="item43c x"></div>
+    <div class="item45c x"></div>
+    <div class="item47c x"></div>
+    <div class="item51c x"></div>
+    <div class="item53c x"></div>
+    <div class="item55c x"></div>
+    <div class="item61c x"></div>
+    <div class="item63c x"></div>
+    <div class="item65c x"></div>
+    <div class="item67c x"></div>
+    <div class="item69c x"></div>
+    <div class="item71c x"></div>
+    <div class="item73c x"></div>
+    <div class="item75c x"></div>
+    <div class="item77c x"></div>
+    <div class="item79c x"></div>
+    <div class="item81c x"></div>
+    <div class="item83c x"></div>
+    <div class="item85c x"></div>
+    <div class="item87c x"></div>
+    <div class="item89c x"></div>
+    <div class="item91c x"></div>
+    <div class="item93c x"></div>
+    <div class="item95c x"></div>
+    <div class="item97c x"></div>
+    <div class="item99c x"></div>
+    <div class="item111c x"></div>
+    <div class="item113c x"></div>
+    <div class="item115c x"></div>
+    <div class="item117c x"></div>
+    <div class="item119c x"></div>
+    <div class="item101c x"></div>
+    <div class="item103c x"></div>
+    <div class="item105c x"></div>
+    <div class="item107c x"></div>
+    <div class="item109c x"></div>
+
+
+  </div>
+
+</body>
+
+</html>
